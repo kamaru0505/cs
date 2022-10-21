@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width:150px;
+            height:150px;
+            background-color: blue;
+            -webkit-transition: 2s;
+            transition: 2s;
+        }
+        div:hover
+        {
+            width:450px;
+        }
+        div.div1
+        {
+            width: 150px;
+            height: 150px;
+            -webkit-animation-name: Animation1;
+            animation-name: Animation1;
+            -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+        }
+        @-webkit-keyframes Animation1{
+            from{background-color:blue;}
+            to{background-color:red;}
+        }
+        @keyframes Animation1{
+            from{background-color:blue;}
+            to{background-color:red;}
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Animation Box Transition</h1>
+    <div></div>
+    <br>
+    <br>
+    <h1>Animation Box Keyframes</h1>
+    <div class="div1"></div>
+</body>
+</html>
